@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>to do list</title>
+</head>
+<body>
+  <main>
+    <div id="tasks-container">
+      <div id="tasks-header">
+         <h2>Save your own task:</h2>
+         <form action="" id="add-tasks-form">
+         <input type="text" id="task-title" placeholder="What are your going to do?">
+         <button id="add-btn" type="submit">
+          <ion-icons name="add-outline">+</ion-icons>
+         </button>
+        </form>
+      </div>
+      <div id="tasks-list-container">
+        <h2>These are your tasks:</h2>
+        <ul id="task-list">
+           <li id="task-box">
+            <span id="task-title"></span>
+            <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+            <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+           </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
